@@ -10,19 +10,14 @@
 	</parent>
 	<groupId>dev.dreiling</groupId>
 	<artifactId>Movies</artifactId>
-	<version>1.0.0</version>
+	<version>1.0.1</version>
+	<packaging>war</packaging>
 	<name>Movies</name>
 	<description>Simple API related to Movies</description>
-	<packaging>war</packaging>
 	<properties>
 		<java.version>21</java.version>
 	</properties>
 	<dependencies>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-tomcat</artifactId>
-			<scope>provided</scope>
-		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-mongodb</artifactId>
@@ -31,7 +26,11 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
-
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-tomcat</artifactId>
+			<scope>provided</scope>
+		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-devtools</artifactId>
@@ -57,6 +56,7 @@
 	</dependencies>
 
 	<build>
+		<finalName>movies</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>

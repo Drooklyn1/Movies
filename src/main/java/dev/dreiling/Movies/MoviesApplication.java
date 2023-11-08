@@ -2,6 +2,7 @@ package dev.dreiling.Movies;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -16,7 +17,12 @@ public class MoviesApplication extends SpringBootServletInitializer {
 		SpringApplication.run(MoviesApplication.class, args);
 	}
 
-	@GetMapping
+	@Override
+	protected SpringApplicationBuilder configure(SpringApplicationBuilder builder) {
+		return builder.sources(MoviesApplication.class);
+	}
+
+	@GetMapping("/")
 	public ResponseEntity<String> apiRoot() {
 		return new ResponseEntity<String>("Movies API", HttpStatus.OK);
 	}
