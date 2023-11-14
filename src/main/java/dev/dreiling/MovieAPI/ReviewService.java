@@ -1,4 +1,4 @@
-package dev.dreiling.Movies;
+package dev.dreiling.MovieAPI;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.mongodb.core.MongoTemplate;

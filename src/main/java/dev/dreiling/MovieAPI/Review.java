@@ -1,4 +1,4 @@
-package dev.dreiling.Movies;
+package dev.dreiling.MovieAPI;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

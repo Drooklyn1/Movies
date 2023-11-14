@@ -1,4 +1,4 @@
-package dev.dreiling.Movies;
+package dev.dreiling.MovieAPI;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -24,7 +24,7 @@ public class MoviesApplication extends SpringBootServletInitializer {
 
 	@GetMapping("/")
 	public ResponseEntity<String> apiRoot() {
-		return new ResponseEntity<String>("Movies API", HttpStatus.OK);
+		return new ResponseEntity<String>("MovieAPI", HttpStatus.OK);
 	}
 
 }
