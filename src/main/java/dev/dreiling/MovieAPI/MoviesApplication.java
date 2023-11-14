@@ -21,7 +21,7 @@ public class MoviesApplication extends SpringBootServletInitializer {
 	protected SpringApplicationBuilder configure(SpringApplicationBuilder builder) {
 		return builder.sources(MoviesApplication.class);
 	}
-
+	//test
 	@GetMapping("/")
 	public ResponseEntity<String> apiRoot() {
 		return new ResponseEntity<String>("MovieAPI", HttpStatus.OK);
