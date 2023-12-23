@@ -26,4 +26,4 @@ jobs:
           app-name: 'dr-movies'
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_58BAA8BE58314EF384A2BFE14DB0176D }}
-          package: '${{ github.workspace }}\target\*.jar'
+          package: 'D:\a\MovieAPI\target\*.jar'
